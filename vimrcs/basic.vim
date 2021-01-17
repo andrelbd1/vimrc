@@ -59,6 +59,9 @@ command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
+" Show line number
+set nu
+
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en' 
 set langmenu=en
@@ -140,7 +143,23 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme desert
+"    colorscheme blue
+"    colorscheme darkblue
+     colorscheme default
+"    colorscheme delek
+"    colorscheme desert
+"    colorscheme elflord
+"    colorscheme evening
+"    colorscheme koehler
+"    colorscheme morning
+"    colorscheme murphy
+"    colorscheme pablo
+"    colorscheme peachpuff
+"    colorscheme ron
+"    colorscheme shine
+"    colorscheme slate
+"    colorscheme torte
+"    colorscheme zellner
 catch
 endtry
 
