@@ -40,7 +40,7 @@ Some other fonts that Awesome will try to use:
 
 ## How to install the Basic version?
 
-The basic version is just one file and no plugins. Just copy [basic.vim](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim) and paste it into your vimrc.
+The basic version is just one file and no plugins. Just copy [basic.vim](https://github.com/andrelbd1/vimrc/blob/master/vimrcs/basic.vim) and paste it into your vimrc.
 
 The basic version is useful to install on remote servers where you don't need many plugins, and you don't do many edits.
 
