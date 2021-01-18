@@ -87,9 +87,9 @@ I recommend reading the docs of these plugins to understand them better. Each pl
 * [ack.vim](https://github.com/mileszs/ack.vim): Vim plugin for `the_silver_searcher` (ag) or ack -- a wicked fast grep
 * [bufexplorer.zip](https://github.com/vim-scripts/bufexplorer.zip): Quickly and easily switch between buffers. This plugin can be opened with `<leader+o>`
 * [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim): Fuzzy file, buffer, mru and tag finder. It's mapped to `<Ctrl+F>`
-* [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2): 
+* [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2): It's mapped to `:Goyo` 
 * [lightline.vim](https://github.com/itchyny/lightline.vim): A light and configurable statusline/tabline for Vim
-* [NERD Tree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim
+* [NERD Tree](https://github.com/scrooloose/nerdtree): A tree explorer plugin for vim. It's mapped to open `F12`
 * [open_file_under_cursor.vim](https://github.com/amix/open_file_under_cursor.vim): Open file under cursor when pressing `gf`
 * [pathogen.vim](https://github.com/tpope/vim-pathogen): Manage your vim runtimepath 
 * [snipmate.vim](https://github.com/garbas/vim-snipmate): snipmate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim
@@ -264,7 +264,7 @@ Bash like keys for the command line:
 
 Write the file as sudo (works only on Unix). Super useful when you open a file and you don't have permissions to save your changes. [Vim tip](http://vim.wikia.com/wiki/Su-write):
 
-    :W 
+    :SW 
 
 
 ### Plugin related mappings
@@ -286,7 +286,7 @@ Open [ctrlp.vim](https://github.com/kien/ctrlp.vim) plugin to quickly find a fil
 
 [NERD Tree](https://github.com/scrooloose/nerdtree) mappings:
 
-    map <leader>nn :NERDTreeToggle<cr>
+    map <F12> :NERDTreeToggle<cr>
     map <leader>nb :NERDTreeFromBookmark 
     map <leader>nf :NERDTreeFind<cr>
 
@@ -368,10 +368,3 @@ Cope mappings:
 Just do following:
 * Remove `~/.vim_runtime`
 * Remove any lines that reference `.vim_runtime` in your `~/.vimrc`
-
-
-## Looking for a remote-first job?
-
-Maintaining this Vim configuration isn't my day job. Daily I am the founder/CEO of [Doist](https://doist.com/). You could come and help us build the workplace of the future while living a balanced life (anywhere in the world 🌍🌎🌏).
-
-PS: Using Vim isn't a requirement 😄
