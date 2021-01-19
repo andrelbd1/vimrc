@@ -130,6 +130,11 @@ endif
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+" Enable code folding
+set foldmethod=indent   
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
