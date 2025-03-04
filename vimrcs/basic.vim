@@ -50,7 +50,7 @@ nmap <leader>w :w!<cr>
 
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
-command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
+ command! SW execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -58,6 +58,9 @@ command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
+
+" Show line number
+set nu
 
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en'
@@ -127,6 +130,11 @@ endif
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+" Enable code folding
+set foldmethod=indent   
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -143,7 +151,23 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme desert
+"    colorscheme blue
+"    colorscheme darkblue
+     colorscheme default
+"    colorscheme delek
+"    colorscheme desert
+"    colorscheme elflord
+"    colorscheme evening
+"    colorscheme koehler
+"    colorscheme morning
+"    colorscheme murphy
+"    colorscheme pablo
+"    colorscheme peachpuff
+"    colorscheme ron
+"    colorscheme shine
+"    colorscheme slate
+"    colorscheme torte
+"    colorscheme zellner
 catch
 endtry
 
@@ -182,9 +206,9 @@ set expandtab
 " Be smart when using tabs ;)
 set smarttab
 
-" 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+" 1 tab == 3 spaces
+set shiftwidth=3
+set tabstop=3
 
 " Linebreak on 500 characters
 set lbr
